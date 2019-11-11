@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/frag_two_tabLayout"
+            android:layout_width="@dimen/dimen_410_dip"
+            app:tabIndicatorColor="@color/blue"
+            app:tabTextColor="@color/grey"
+            app:tabSelectedTextColor="@color/black"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="@color/cyan"/>
+
+        <ImageView
+            android:id="@+id/frag_two_img_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/dimen_10_dip"
+            android:background="@color/cyan"
+            android:layout_toEndOf="@+id/frag_two_tabLayout"
+            android:src="@android:drawable/ic_menu_add"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_show_toast"
+        android:background="@color/dodgerblue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14_dip"
+        android:text="又为您找到了10条数据"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30_dip">
+
+    </TextView>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/frag_two_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frag_two_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:background="@color/gainsboro" />
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

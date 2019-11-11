@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo30</string>
+
+    <string name="getDataError">数据加载失败</string>
+    <string name="xwxq">详情</string>
+    <string name="xwxqfx">●●●</string>
+    <string name="notshare">暂不分享</string>
+
+    <string name="tabitems">TabItems</string>
+    <string name="mytab">我的专业</string>
+    <string name="mytabselect">点击进入专业频道</string>
+    <string name="mytabedit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="alltab">全部专业</string>
+    <string name="addtab">点击添加专业</string>
+</resources>
